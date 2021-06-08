@@ -1,0 +1,93 @@
+@media screen and (min-width: 620px) {
+  .hero__container {
+    margin: 120px auto;
+  }
+  .hero__container .hero__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 80px 0px;
+  }
+  .hero__container .hero__main .svg-img__container {
+    display: block;
+    width: 350px;
+  }
+  .hero__container .hero__main .hero__info #type-line {
+    font-size: 1em;
+    display: inline-block;
+  }
+  .hero__container .more-about-me__button span {
+    margin-top: 5px;
+  }
+  .about-me__container {
+    box-shadow: -10px 10px rgba(119, 172, 241, 0.3);
+    width: 75%;
+    padding: 40px;
+  }
+  .skills__container .additional_skills {
+    box-shadow: -10px 10px rgba(119, 172, 241, 0.3);
+    padding: 40px;
+    line-height: 2rem;
+  }
+  .contact__container {
+    padding: 40px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero__container {
+    margin: 150px auto;
+  }
+  .hero__container .hero__main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 100px;
+    padding-bottom: 150px;
+  }
+  .about-me__container {
+    line-height: 1.7rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero__container {
+    margin: 90px auto;
+  }
+  .hero__container .more-about-me__button span {
+    margin-top: 5px;
+  }
+  .about-me__container {
+    width: 60%;
+    padding: 70px;
+    margin: 300px auto;
+  }
+  .skills__container {
+    margin: 300px auto;
+  }
+  .skills__container .tech-icons__container svg {
+    width: 100px;
+  }
+  .skills__container .additional_skills {
+    width: 60%;
+    margin: 100px auto;
+  }
+  .projects__container {
+    margin: 300px auto;
+  }
+  .projects__container .project-box__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .contact__container .other-contacts {
+    width: auto;
+    margin: auto;
+    text-align: center;
+  }
+}
