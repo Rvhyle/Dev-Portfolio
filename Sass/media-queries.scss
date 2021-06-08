@@ -82,11 +82,11 @@
   .about-me__container {
     width: 60%;
     padding: 70px;
-    margin: 300px auto;
+    margin: 250px auto;
   }
 
   .skills__container {
-    margin: 300px auto;
+    margin: 250px auto;
     .tech-icons__container {
       svg {
         width: 100px;
@@ -99,7 +99,7 @@
   }
 
   .projects__container {
-    margin: 300px auto;
+    margin: 250px auto;
     .project-box__container {
       @include flex-row;
     }

@@ -79,7 +79,7 @@ $().ready(function () {
     timeline2.add(project1Tween).add(project2Tween).add(project3Tween);
 
     let projects_scene = new ScrollMagic.Scene({
-      duration: 400,
+      duration: 300,
       triggerElement: '#projects',
     })
       .setTween(timeline2)

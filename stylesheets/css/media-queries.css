@@ -64,10 +64,10 @@
   .about-me__container {
     width: 60%;
     padding: 70px;
-    margin: 300px auto;
+    margin: 250px auto;
   }
   .skills__container {
-    margin: 300px auto;
+    margin: 250px auto;
   }
   .skills__container .tech-icons__container svg {
     width: 100px;
@@ -77,7 +77,7 @@
     margin: 100px auto;
   }
   .projects__container {
-    margin: 300px auto;
+    margin: 250px auto;
   }
   .projects__container .project-box__container {
     display: flex;
