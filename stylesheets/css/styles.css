@@ -224,6 +224,7 @@
 }
 
 .projects__container .project-box__container .project-box {
+  position: relative;
   max-width: 400px;
   border: 0.5px solid black;
 }
