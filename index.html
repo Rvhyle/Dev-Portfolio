@@ -9,354 +9,111 @@
       content="Frontend Developer portfolio for Ryle Urcia"
     />
     <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined"
       rel="stylesheet"
     />
     <link rel="icon" href="./assets/images/person-icon.png" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="./stylesheets/css/global-styles.css" />
     <link rel="stylesheet" href="./stylesheets/css/styles.css" />
     <link rel="stylesheet" href="./stylesheets/css/media-queries.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css">
     <title>RyuDev</title>
   </head>
   <body>
     <!-- NavBar -->
-    <div class="navbar__container">
-      <div class="nav">
-        <a href="/"><span class="navbar__logo">ryuDev</span></a>
-        <span id="nav-menu" class="material-icons">menu</span>
-      </div>
-    </div>
-    <!-- Nav Content -->
-    <div class="navbar__content">
-      <span id="close" class="material-icons"> close </span>
-      <ul class="navbar__links">
-        <li class="navbar__link"><a href="#about-me">About Me</a></li>
-        <li class="navbar__link"><a href="#skills">Skills</a></li>
-        <li class="navbar__link"><a href="#projects">Projects</a></li>
-        <li class="navbar__link"><a href="#contact-me">Contact Me</a></li>
-      </ul>
-    </div>
-    <!-- Hero Section -->
-    <div class="hero__container">
-      <div class="hero__main">
-        <div id="hero-info" class="hero__info">
-          <h1>< Ryle Urcia /></h1>
-          <h2>front end developer</h2>
-          <div class="socials__container">
-            <!-- GitHub Svg -->
-            <a href="https://github.com/Rvhyle" target="_blank">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="32.579"
-                height="31.775"
-                viewBox="0 0 32.579 31.775"
-                fill="#0f0c0d"
-                class="github__icon"
-              >
-                <path
-                  d="M152.608,107.44a16.291,16.291,0,0,0-5.148,31.747c.815.149,1.112-.353,1.112-.785,0-.387-.014-1.411-.022-2.771-4.531.985-5.487-2.183-5.487-2.183a4.315,4.315,0,0,0-1.809-2.383c-1.479-1.011.112-.99.112-.99a3.42,3.42,0,0,1,2.495,1.678,3.468,3.468,0,0,0,4.741,1.354,3.482,3.482,0,0,1,1.034-2.178c-3.617-.411-7.42-1.808-7.42-8.051a6.3,6.3,0,0,1,1.677-4.371,5.852,5.852,0,0,1,.16-4.311s1.367-.438,4.479,1.67a15.448,15.448,0,0,1,8.156,0c3.11-2.108,4.475-1.67,4.475-1.67a5.854,5.854,0,0,1,.163,4.311A6.286,6.286,0,0,1,163,122.878c0,6.258-3.809,7.635-7.438,8.038a3.889,3.889,0,0,1,1.106,3.017c0,2.178-.02,3.935-.02,4.469,0,.435.294.942,1.12.783a16.292,16.292,0,0,0-5.16-31.745Z"
-                  transform="translate(-136.32 -107.44)"
-                  fill-rule="evenodd"
-                />
-              </svg>
-            </a>
-            <!-- LinkedIn Svg -->
-            <a href="https://www.linkedin.com/in/urcia-ryle/" target="_blank">
-              <svg
-                fill="#000000"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                width="48px"
-                height="48px"
-                class="linkedin__icon"
-              >
-                <path
-                  d="M21,3H3v18h18V3z M9,17H6.477v-7H9V17z M7.694,8.717c-0.771,0-1.286-0.514-1.286-1.2s0.514-1.2,1.371-1.2 c0.771,0,1.286,0.514,1.286,1.2S8.551,8.717,7.694,8.717z M18,17h-2.442v-3.826c0-1.058-0.651-1.302-0.895-1.302 s-1.058,0.163-1.058,1.302c0,0.163,0,3.826,0,3.826h-2.523v-7h2.523v0.977C13.93,10.407,14.581,10,15.802,10 C17.023,10,18,10.977,18,13.174V17z"
-                />
-              </svg>
-            </a>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <button class="navbar-toggler me-auto" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"><span class="material-icons-outlined">
+          menu
+          </span></span></button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav m-auto">
+            <a href="#about" class="nav-link px-md-5 pt-md-4">About</a>
+            <a href="#projects" class="nav-link px-md-5 pt-md-4">Projects</a>
+            <a href="#contact" class="nav-link px-md-5 pt-md-4">Contact</a>
           </div>
         </div>
-        <!-- Big Svg -->
-        <div id="svg-img" class="svg-img__container">
-          <img src="./assets/svgs/developer_svg.svg" alt="developer svg" />
+      </div>
+    </nav>
+    <!-- Header -->
+    <header class="header-container vh-100">
+      <div class="header-content d-flex flex-column justify-content-center align-items-center">
+        <h1>Hey I'm Ryle</h1>
+        <h2>< front-end developer />.</h2>
+        <div class="cta d-flex align-items-center gap-4">
+          <a href="https://github.com/Rvhyle"><i class="devicon-github-original"></i></a>
+          <a href="mailto: urciaryle@gmail.com"><i class="material-icons-outlined">
+            email
+          </i></a>
         </div>
       </div>
-      <div id="more-about-me" class="more-about-me__button">
-        <span
-          ><svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="35"
-            height="60"
-            viewBox="0 0 35 60"
-          >
-            <g id="Mouse" transform="translate(-1580 -1933)">
-              <g
-                id="Rectangle_18"
-                data-name="Rectangle 18"
-                transform="translate(1580 1933)"
-                fill="none"
-                stroke="#000"
-                stroke-width="2.5"
-              >
-                <rect width="35" height="60" rx="17.5" stroke="none" />
-                <rect
-                  x="1.25"
-                  y="1.25"
-                  width="32.5"
-                  height="57.5"
-                  rx="16.25"
-                  fill="none"
-                />
-              </g>
-              <g
-                id="Path_108"
-                data-name="Path 108"
-                transform="translate(1595.444 1940.128)"
-                fill="black"
-              >
-                <path
-                  d="M2.376,0A2.376,2.376,0,0,1,4.752,2.376V16.632a2.376,2.376,0,0,1-4.752,0V2.376A2.376,2.376,0,0,1,2.376,0Z"
-                  stroke="none"
-                />
-                <path
-                  d="M 2.375942707061768 1 C 1.617242813110352 1 1.00000262260437 1.617240905761719 1.00000262260437 2.375940322875977 L 1.00000262260437 16.63160133361816 C 1.00000262260437 17.39030075073242 1.617242813110352 18.00754165649414 2.375942707061768 18.00754165649414 C 3.134642601013184 18.00754165649414 3.751882553100586 17.39030075073242 3.751882553100586 16.63160133361816 L 3.751882553100586 2.375940322875977 C 3.751882553100586 1.617240905761719 3.134642601013184 1 2.375942707061768 1 M 2.375942707061768 0 C 3.688142776489258 0 4.751882553100586 1.063741683959961 4.751882553100586 2.375940322875977 L 4.751882553100586 16.63160133361816 C 4.751882553100586 17.94379997253418 3.688142776489258 19.00754165649414 2.375942707061768 19.00754165649414 C 1.063742637634277 19.00754165649414 2.86102294921875e-06 17.94379997253418 2.86102294921875e-06 16.63160133361816 L 2.86102294921875e-06 2.375940322875977 C 2.86102294921875e-06 1.063741683959961 1.063742637634277 0 2.375942707061768 0 Z"
-                  stroke="none"
-                />
-              </g>
-            </g>
-          </svg>
-        </span>
+    </header>
+    <!-- About -->
+    <div id="about" class="about container-fluid vh-100">
+        <div class="about-me">
+          <h2 class="py-3 py-md-5 px-4 ps-md-5">About Me</h2>
+          <p class="px-4 px-md-0 ps-md-5 mx-auto mx-md-0">My name is Ryle Urcia, and I am a self taught front-end developer from Queens, NY.
+          I love to play video games, code, and watch the Boston Celtics play (yea...I’m a Boston
+          fan from NYC). Aside from watching basketball, I also love to play it as well. I found my
+          passion for web development during the lockdown in 2020, during quarantine I used my
+          time to learn the basics of web development. Fast forward to now, my knowledge in the
+          field has expaned and I continue to learn new things everyday striving to become a 
+          better developer.</p>
+          <!-- <a class="px-4 px-md-0 ps-md-5 mx-auto mx-md-0" href="#skills">Skills ></a> -->
+        </div>
       </div>
-    </div>
-
-    <!-- About Me -->
-    <div id="about-me"></div>
-    <div id="about-trigger" class="about-me__container">
-      <h2>About Me</h2>
-      <p>
-        Hello, My name is Ryle and I'm a self-taught front end developer from
-        Queens, New York. Growing up I was obsessed with video games, mostly
-        shooters and because of this obsession I became curious on how these
-        video games were made and what made them so great. After a little
-        digging, I discovered code. Front end development wasn't my first
-        choice, before I began front end I was testing the waters with different
-        languages and different ways to create things with code. But, everything
-        changed when the pandemic hit. Lockdown forced us to stay home and as a
-        result, I decided to dedicate the time to learn a new skill and commit
-        to it, that's when I decided to try and learn web development. I started
-        doing YouTube tutorials, buying Udemy courses , and building my own mini
-        projects. As time went on, I fell in love with the process and I finally
-        knew what I wanted to do. Till this day, I'm still learning and everyday
-        is a new opportunity for me to become a better developer.
-      </p>
-    </div>
-
-    <!-- Skills -->
-    <div id="skills"></div>
-    <div class="skills__container">
-      <h2>Skills</h2>
-      <div class="tech-icons__container">
-        <!-- HTML -->
-        <svg id="html" viewBox="0 0 128 128">
-          <path
-            fill="#E44D26"
-            d="M27.854 116.354l-8.043-90.211h88.378l-8.051 90.197-36.192 10.033z"
-          ></path>
-          <path
-            fill="#F16529"
-            d="M64 118.704l29.244-8.108 6.881-77.076h-36.125z"
-          ></path>
-          <path
-            fill="#EBEBEB"
-            d="M64 66.978h-14.641l-1.01-11.331h15.651v-11.064h-27.743l.264 2.969 2.72 30.489h24.759zM64 95.711l-.049.013-12.321-3.328-.788-8.823h-11.107l1.55 17.372 22.664 6.292.051-.015z"
-          ></path>
-          <path
-            d="M28.034 1.627h5.622v5.556h5.144v-5.556h5.623v16.822h-5.623v-5.633h-5.143v5.633h-5.623v-16.822zM51.816 7.206h-4.95v-5.579h15.525v5.579h-4.952v11.243h-5.623v-11.243zM64.855 1.627h5.862l3.607 5.911 3.603-5.911h5.865v16.822h-5.601v-8.338l-3.867 5.981h-.098l-3.87-5.981v8.338h-5.502v-16.822zM86.591 1.627h5.624v11.262h7.907v5.561h-13.531v-16.823z"
-          ></path>
-          <path
-            fill="#fff"
-            d="M63.962 66.978v11.063h13.624l-1.284 14.349-12.34 3.331v11.51l22.682-6.286.166-1.87 2.6-29.127.27-2.97h-2.982zM63.962 44.583v11.064h26.725l.221-2.487.505-5.608.265-2.969z"
-          ></path>
-        </svg>
-        <!-- CSS  -->
-        <svg id="css" viewBox="0 0 128 128">
-          <path
-            fill="#131313"
-            d="M89.234 5.856h-7.384l7.679 8.333v3.967h-15.816v-4.645h7.678l-7.678-8.333v-3.971h15.521v4.649zm-18.657 0h-7.384l7.679 8.333v3.967h-15.817v-4.645h7.679l-7.679-8.333v-3.971h15.522v4.649zm-18.474.19h-7.968v7.271h7.968v4.839h-13.632v-16.949h13.632v4.839z"
-          ></path>
-          <path
-            fill="#1572B6"
-            d="M27.613 116.706l-8.097-90.813h88.967l-8.104 90.798-36.434 10.102-36.332-10.087z"
-          ></path>
-          <path
-            fill="#33A9DC"
-            d="M64.001 119.072l29.439-8.162 6.926-77.591h-36.365v85.753z"
-          ></path>
-          <path
-            fill="#fff"
-            d="M64 66.22h14.738l1.019-11.405h-15.757v-11.138h27.929000000000002l-.267 2.988-2.737 30.692h-24.925v-11.137z"
-          ></path>
-          <path
-            fill="#EBEBEB"
-            d="M64.067 95.146l-.049.014-12.404-3.35-.794-8.883h-11.178999999999998l1.561 17.488 22.814 6.333.052-.015v-11.587z"
-          ></path>
-          <path
-            fill="#fff"
-            d="M77.792 76.886l-1.342 14.916-12.422 3.353v11.588l22.833-6.328.168-1.882 1.938-21.647h-11.175z"
-          ></path>
-          <path
-            fill="#EBEBEB"
-            d="M64.039 43.677v11.136999999999999h-26.903000000000002l-.224-2.503-.507-5.646-.267-2.988h27.901zM64 66.221v11.138h-12.247l-.223-2.503-.508-5.647-.267-2.988h13.245z"
-          ></path>
-        </svg>
-        <!-- JAVASCRIPT -->
-        <svg id="js" viewBox="0 0 128 128">
-          <path
-            fill="#F0DB4F"
-            d="M1.408 1.408h125.184v125.185h-125.184z"
-          ></path>
-          <path
-            fill="#323330"
-            d="M116.347 96.736c-.917-5.711-4.641-10.508-15.672-14.981-3.832-1.761-8.104-3.022-9.377-5.926-.452-1.69-.512-2.642-.226-3.665.821-3.32 4.784-4.355 7.925-3.403 2.023.678 3.938 2.237 5.093 4.724 5.402-3.498 5.391-3.475 9.163-5.879-1.381-2.141-2.118-3.129-3.022-4.045-3.249-3.629-7.676-5.498-14.756-5.355l-3.688.477c-3.534.893-6.902 2.748-8.877 5.235-5.926 6.724-4.236 18.492 2.975 23.335 7.104 5.332 17.54 6.545 18.873 11.531 1.297 6.104-4.486 8.08-10.234 7.378-4.236-.881-6.592-3.034-9.139-6.949-4.688 2.713-4.688 2.713-9.508 5.485 1.143 2.499 2.344 3.63 4.26 5.795 9.068 9.198 31.76 8.746 35.83-5.176.165-.478 1.261-3.666.38-8.581zm-46.885-37.793h-11.709l-.048 30.272c0 6.438.333 12.34-.714 14.149-1.713 3.558-6.152 3.117-8.175 2.427-2.059-1.012-3.106-2.451-4.319-4.485-.333-.584-.583-1.036-.667-1.071l-9.52 5.83c1.583 3.249 3.915 6.069 6.902 7.901 4.462 2.678 10.459 3.499 16.731 2.059 4.082-1.189 7.604-3.652 9.448-7.401 2.666-4.915 2.094-10.864 2.07-17.444.06-10.735.001-21.468.001-32.237z"
-          ></path>
-        </svg>
-        <!-- JQUERY -->
-        <svg id="jquery" viewBox="0 0 128 128">
-          <path
-            fill="#0868AC"
-            d="M27.758 20.421c-7.352 10.565-6.437 24.312-.82 35.54l.411.798.263.506.164.291.293.524c.174.307.353.612.536.919l.306.504c.203.326.41.65.622.973l.265.409c.293.437.592.872.901 1.301l.026.033.152.205c.267.368.542.732.821 1.093l.309.393c.249.313.502.623.759.934l.29.346c.345.406.698.812 1.057 1.208l.021.022.041.045c.351.383.71.758 1.075 1.133l.344.347c.282.284.569.563.858.841l.351.334c.387.364.777.722 1.176 1.07l.018.016.205.174c.351.305.708.605 1.068.902l.442.353c.294.235.591.468.89.696l.477.361c.33.243.663.482.999.717l.363.258.101.072c.318.22.645.431.97.642l.42.28c.5.315 1.007.628 1.519.93l.42.237c.377.217.756.431 1.14.639l.631.326.816.424.188.091.334.161c.427.204.858.405 1.293.599l.273.122c.498.218 1.001.427 1.508.628l.368.144c.469.182.945.359 1.423.527l.179.062c.524.184 1.054.353 1.587.52l.383.114c.542.164 1.079.358 1.638.462 35.553 6.483 45.88-21.364 45.88-21.364-8.674 11.3-24.069 14.28-38.656 10.962-.553-.125-1.089-.298-1.628-.456l-.406-.124c-.526-.161-1.049-.33-1.568-.51l-.215-.077c-.465-.164-.924-.336-1.382-.513l-.388-.152c-.501-.198-1-.405-1.492-.62l-.298-.133c-.423-.191-.842-.384-1.259-.585l-.364-.175c-.327-.159-.65-.328-.974-.495l-.649-.341c-.395-.21-.782-.43-1.167-.654l-.394-.219c-.513-.303-1.019-.615-1.52-.932l-.41-.273c-.363-.234-.725-.473-1.081-.719l-.349-.245c-.344-.242-.685-.489-1.022-.738l-.453-.343c-.31-.237-.618-.476-.922-.721l-.411-.33c-.388-.318-.771-.64-1.149-.969l-.126-.105c-.409-.359-.811-.728-1.208-1.098l-.34-.328c-.294-.279-.584-.561-.868-.851l-.34-.34c-.362-.37-.717-.745-1.065-1.126l-.053-.057c-.368-.402-.728-.813-1.08-1.229l-.283-.336c-.263-.316-.523-.638-.777-.961l-.285-.355c-.307-.397-.605-.793-.898-1.195-8.098-11.047-11.008-26.283-4.535-38.795M50.578 11.519c-5.316 7.65-5.028 17.893-.88 25.983.695 1.356 1.477 2.673 2.351 3.925.796 1.143 1.68 2.501 2.737 3.418.383.422.784.834 1.193 1.238l.314.311c.397.385.801.764 1.218 1.132l.05.043.012.012c.462.405.939.794 1.423 1.178l.323.252c.486.372.981.738 1.489 1.087l.043.033.68.447.322.213c.363.233.73.459 1.104.676l.156.092c.322.185.648.367.975.545l.347.18.682.354.103.047c.469.23.941.453 1.424.663l.314.13c.386.163.775.323 1.167.473l.5.184c.356.132.712.253 1.072.373l.484.155c.511.158 1.017.359 1.549.448 27.45 4.547 33.787-16.588 33.787-16.588-5.712 8.228-16.775 12.153-28.58 9.089-.524-.138-1.042-.288-1.555-.449l-.467-.151c-.365-.117-.728-.243-1.087-.374l-.491-.183c-.394-.152-.784-.309-1.171-.473l-.315-.133c-.485-.211-.962-.434-1.432-.666l-.718-.365-.414-.213c-.306-.166-.61-.338-.909-.514l-.217-.123c-.372-.217-.738-.44-1.1-.672l-.332-.221-.712-.472c-.506-.349-.999-.714-1.484-1.085l-.334-.264c-5.167-4.079-9.263-9.655-11.21-15.977-2.041-6.557-1.601-13.917 1.935-19.891M69.771 4.868c-3.134 4.612-3.442 10.341-1.267 15.435 2.293 5.407 6.992 9.648 12.477 11.66l.682.235.3.096c.323.102.644.22.978.282 15.157 2.929 19.268-7.777 20.362-9.354-3.601 5.185-9.653 6.43-17.079 4.627-.586-.142-1.231-.354-1.796-.555-.725-.259-1.439-.553-2.134-.886-1.318-.634-2.575-1.402-3.741-2.282-6.645-5.042-10.772-14.659-6.436-22.492"
-          ></path>
-          <path
-            fill="#131B28"
-            d="M66.359 96.295h-4.226c-.234 0-.467.188-.517.417l-1.5 6.94-1.5 6.94c-.049.229-.282.417-.516.417h-2.991c-2.959 0-2.617-2.047-2.011-4.851l.018-.085.066-.354.012-.066.135-.72.145-.771.154-.785.682-3.332.683-3.332c.047-.23-.107-.419-.341-.419h-4.337c-.234 0-.466.188-.514.418l-.933 4.424-.932 4.425-.002.006-.086.412c-1.074 4.903-.79 9.58 5.048 9.727l.17.003h9.163c.234 0 .467-.188.516-.417l1.976-9.289 1.976-9.29c.049-.23-.103-.417-.338-.418zM21.103 96.246h-4.64c-.235 0-.469.188-.521.416l-.44 1.942-.44 1.942c-.051.229.098.416.333.416h4.676c.235 0 .468-.188.518-.417l.425-1.941.425-1.941c.049-.229-.101-.417-.336-.417zM19.757 102.29h-4.677c-.234 0-.469.188-.521.416l-.657 2.91-.656 2.909-.183.834-.631 2.97-.63 2.971c-.049.229-.15.599-.225.821 0 0-.874 2.6-2.343 2.57l-.184-.004-1.271-.023h-.001c-.234-.003-.469.18-.524.407l-.485 2.039-.484 2.038c-.055.228.093.416.326.42.833.01 2.699.031 3.828.031 3.669 0 5.604-2.033 6.843-7.883l1.451-6.714 1.361-6.297c.049-.227-.103-.415-.337-.415zM105.874 100.716l-.194-.801-.191-.82-.097-.414c-.38-1.477-1.495-2.328-3.917-2.328l-3.77-.004-3.472-.005h-3.907c-.234 0-.466.188-.515.417l-.173.816-.204.964-.057.271-1.759 8.24-1.67 7.822c-.05.23-.066.512-.038.626.028.115.479.209.713.209h3.524c.235 0 .532-.042.66-.094s.317-.513.364-.742l.626-3.099.627-3.1.001-.005.084-.413.76-3.56.671-3.144c.05-.229.281-.416.515-.417l11.089-.005c.235.002.383-.185.33-.414zM120.149 93.476l-.854.003h-3.549c-.235 0-.536.159-.667.353l-7.849 11.498c-.132.194-.283.166-.335-.062l-.578-2.533c-.052-.229-.287-.416-.522-.416h-5.045c-.235 0-.374.184-.31.409l2.261 7.921c.064.226.069.596.011.824l-.985 3.833c-.059.228.085.413.32.413h4.987c.234 0 .474-.186.532-.413l.986-3.833c.058-.229.221-.567.363-.755l12.742-16.911c.142-.188.065-.341-.169-.339l-1.339.008zM80.063 103.395v-.004c-.029.254-.264.441-.499.441h-6.397c-.222 0-.334-.15-.301-.336l.006-.015-.004.002.003-.021.029-.109c.611-1.624 1.855-2.69 4.194-2.69 2.634-.001 3.148 1.285 2.969 2.732zm-1.877-7.384c-8.211 0-10.157 4.984-11.249 10.015-1.091 5.128-.998 9.921 7.5 9.921h1.03l.256-.001h.06l1.02-.003h.018c2.244-.009 4.495-.026 5.406-.033.233-.004.461-.191.509-.42l.344-1.681.067-.327.41-2.006c.047-.229-.106-.418-.341-.418h-7.639c-3.039 0-3.941-.807-3.608-3.181h12.211l-.001.001.008-.001c.194-.003.374-.137.445-.315l.029-.106-.001.001c1.813-6.839 1.293-11.445-6.474-11.446zM39.376 103.369l-.116.409v.001l-.922 3.268-.922 3.267c-.063.227-.308.411-.543.411h-4.88c-3.702 0-4.604-2.896-3.702-7.166.901-4.368 2.668-7.083 6.312-7.358 4.98-.376 5.976 3.126 4.773 7.168zm3.348 7.105s2.301-5.588 2.823-8.814c.713-4.319-1.45-10.585-9.804-10.585-8.306 0-11.914 5.981-13.29 12.484-1.376 6.55.427 12.293 8.686 12.246l6.516-.024 6.089-.022c.234-.002.474-.188.534-.414l1.061-4.046c.059-.228-.084-.414-.319-.416l-1.017-.006-1.017-.006c-.199-.001-.313-.131-.289-.302l.027-.095zM83.844 106.733c0 .155-.125.281-.28.281-.154 0-.28-.126-.28-.281 0-.154.125-.279.28-.279.155 0 .28.125.28.279z"
-          ></path>
-        </svg>
-        <!-- REACTJS -->
-        <svg id="react" viewBox="0 0 128 128">
-          <g fill="#61DAFB">
-            <circle cx="64" cy="64" r="11.4"></circle>
-            <path
-              d="M107.3 45.2c-2.2-.8-4.5-1.6-6.9-2.3.6-2.4 1.1-4.8 1.5-7.1 2.1-13.2-.2-22.5-6.6-26.1-1.9-1.1-4-1.6-6.4-1.6-7 0-15.9 5.2-24.9 13.9-9-8.7-17.9-13.9-24.9-13.9-2.4 0-4.5.5-6.4 1.6-6.4 3.7-8.7 13-6.6 26.1.4 2.3.9 4.7 1.5 7.1-2.4.7-4.7 1.4-6.9 2.3-12.5 4.8-19.3 11.4-19.3 18.8s6.9 14 19.3 18.8c2.2.8 4.5 1.6 6.9 2.3-.6 2.4-1.1 4.8-1.5 7.1-2.1 13.2.2 22.5 6.6 26.1 1.9 1.1 4 1.6 6.4 1.6 7.1 0 16-5.2 24.9-13.9 9 8.7 17.9 13.9 24.9 13.9 2.4 0 4.5-.5 6.4-1.6 6.4-3.7 8.7-13 6.6-26.1-.4-2.3-.9-4.7-1.5-7.1 2.4-.7 4.7-1.4 6.9-2.3 12.5-4.8 19.3-11.4 19.3-18.8s-6.8-14-19.3-18.8zm-14.8-30.5c4.1 2.4 5.5 9.8 3.8 20.3-.3 2.1-.8 4.3-1.4 6.6-5.2-1.2-10.7-2-16.5-2.5-3.4-4.8-6.9-9.1-10.4-13 7.4-7.3 14.9-12.3 21-12.3 1.3 0 2.5.3 3.5.9zm-11.2 59.3c-1.8 3.2-3.9 6.4-6.1 9.6-3.7.3-7.4.4-11.2.4-3.9 0-7.6-.1-11.2-.4-2.2-3.2-4.2-6.4-6-9.6-1.9-3.3-3.7-6.7-5.3-10 1.6-3.3 3.4-6.7 5.3-10 1.8-3.2 3.9-6.4 6.1-9.6 3.7-.3 7.4-.4 11.2-.4 3.9 0 7.6.1 11.2.4 2.2 3.2 4.2 6.4 6 9.6 1.9 3.3 3.7 6.7 5.3 10-1.7 3.3-3.4 6.6-5.3 10zm8.3-3.3c1.5 3.5 2.7 6.9 3.8 10.3-3.4.8-7 1.4-10.8 1.9 1.2-1.9 2.5-3.9 3.6-6 1.2-2.1 2.3-4.2 3.4-6.2zm-25.6 27.1c-2.4-2.6-4.7-5.4-6.9-8.3 2.3.1 4.6.2 6.9.2 2.3 0 4.6-.1 6.9-.2-2.2 2.9-4.5 5.7-6.9 8.3zm-18.6-15c-3.8-.5-7.4-1.1-10.8-1.9 1.1-3.3 2.3-6.8 3.8-10.3 1.1 2 2.2 4.1 3.4 6.1 1.2 2.2 2.4 4.1 3.6 6.1zm-7-25.5c-1.5-3.5-2.7-6.9-3.8-10.3 3.4-.8 7-1.4 10.8-1.9-1.2 1.9-2.5 3.9-3.6 6-1.2 2.1-2.3 4.2-3.4 6.2zm25.6-27.1c2.4 2.6 4.7 5.4 6.9 8.3-2.3-.1-4.6-.2-6.9-.2-2.3 0-4.6.1-6.9.2 2.2-2.9 4.5-5.7 6.9-8.3zm22.2 21l-3.6-6c3.8.5 7.4 1.1 10.8 1.9-1.1 3.3-2.3 6.8-3.8 10.3-1.1-2.1-2.2-4.2-3.4-6.2zm-54.5-16.2c-1.7-10.5-.3-17.9 3.8-20.3 1-.6 2.2-.9 3.5-.9 6 0 13.5 4.9 21 12.3-3.5 3.8-7 8.2-10.4 13-5.8.5-11.3 1.4-16.5 2.5-.6-2.3-1-4.5-1.4-6.6zm-24.7 29c0-4.7 5.7-9.7 15.7-13.4 2-.8 4.2-1.5 6.4-2.1 1.6 5 3.6 10.3 6 15.6-2.4 5.3-4.5 10.5-6 15.5-13.8-4-22.1-10-22.1-15.6zm28.5 49.3c-4.1-2.4-5.5-9.8-3.8-20.3.3-2.1.8-4.3 1.4-6.6 5.2 1.2 10.7 2 16.5 2.5 3.4 4.8 6.9 9.1 10.4 13-7.4 7.3-14.9 12.3-21 12.3-1.3 0-2.5-.3-3.5-.9zm60.8-20.3c1.7 10.5.3 17.9-3.8 20.3-1 .6-2.2.9-3.5.9-6 0-13.5-4.9-21-12.3 3.5-3.8 7-8.2 10.4-13 5.8-.5 11.3-1.4 16.5-2.5.6 2.3 1 4.5 1.4 6.6zm9-15.6c-2 .8-4.2 1.5-6.4 2.1-1.6-5-3.6-10.3-6-15.6 2.4-5.3 4.5-10.5 6-15.5 13.8 4 22.1 10 22.1 15.6 0 4.7-5.8 9.7-15.7 13.4z"
-            ></path>
-          </g>
-        </svg>
-        <!-- GIT -->
-        <svg id="git" viewBox="0 0 128 128">
-          <path
-            fill="#F34F29"
-            d="M124.737 58.378l-55.116-55.114c-3.172-3.174-8.32-3.174-11.497 0l-11.444 11.446 14.518 14.518c3.375-1.139 7.243-.375 9.932 2.314 2.703 2.706 3.461 6.607 2.294 9.993l13.992 13.993c3.385-1.167 7.292-.413 9.994 2.295 3.78 3.777 3.78 9.9 0 13.679-3.78 3.78-9.901 3.78-13.683 0-2.842-2.844-3.545-7.019-2.105-10.521l-13.048-13.048-.002 34.341c.922.455 1.791 1.063 2.559 1.828 3.778 3.777 3.778 9.898 0 13.683-3.779 3.777-9.904 3.777-13.679 0-3.778-3.784-3.778-9.905 0-13.683.934-.933 2.014-1.638 3.167-2.11v-34.659c-1.153-.472-2.231-1.172-3.167-2.111-2.862-2.86-3.551-7.06-2.083-10.576l-14.313-14.313-37.792 37.79c-3.175 3.177-3.175 8.325 0 11.5l55.117 55.114c3.174 3.174 8.32 3.174 11.499 0l54.858-54.858c3.174-3.176 3.174-8.327-.001-11.501z"
-          ></path>
-        </svg>
-        <!-- GITHUB -->
-        <svg id="github" viewBox="0 0 128 128">
-          <g fill="#181616">
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M64 5.103c-33.347 0-60.388 27.035-60.388 60.388 0 26.682 17.303 49.317 41.297 57.303 3.017.56 4.125-1.31 4.125-2.905 0-1.44-.056-6.197-.082-11.243-16.8 3.653-20.345-7.125-20.345-7.125-2.747-6.98-6.705-8.836-6.705-8.836-5.48-3.748.413-3.67.413-3.67 6.063.425 9.257 6.223 9.257 6.223 5.386 9.23 14.127 6.562 17.573 5.02.542-3.903 2.107-6.568 3.834-8.076-13.413-1.525-27.514-6.704-27.514-29.843 0-6.593 2.36-11.98 6.223-16.21-.628-1.52-2.695-7.662.584-15.98 0 0 5.07-1.623 16.61 6.19C53.7 35 58.867 34.327 64 34.304c5.13.023 10.3.694 15.127 2.033 11.526-7.813 16.59-6.19 16.59-6.19 3.287 8.317 1.22 14.46.593 15.98 3.872 4.23 6.215 9.617 6.215 16.21 0 23.194-14.127 28.3-27.574 29.796 2.167 1.874 4.097 5.55 4.097 11.183 0 8.08-.07 14.583-.07 16.572 0 1.607 1.088 3.49 4.148 2.897 23.98-7.994 41.263-30.622 41.263-57.294C124.388 32.14 97.35 5.104 64 5.104z"
-            ></path>
-            <path
-              d="M26.484 91.806c-.133.3-.605.39-1.035.185-.44-.196-.685-.605-.543-.906.13-.31.603-.395 1.04-.188.44.197.69.61.537.91zm-.743-.55M28.93 94.535c-.287.267-.85.143-1.232-.28-.396-.42-.47-.983-.177-1.254.298-.266.844-.14 1.24.28.394.426.472.984.17 1.255zm-.575-.618M31.312 98.012c-.37.258-.976.017-1.35-.52-.37-.538-.37-1.183.01-1.44.373-.258.97-.025 1.35.507.368.545.368 1.19-.01 1.452zm0 0M34.573 101.373c-.33.365-1.036.267-1.552-.23-.527-.487-.674-1.18-.343-1.544.336-.366 1.045-.264 1.564.23.527.486.686 1.18.333 1.543zm0 0M39.073 103.324c-.147.473-.825.688-1.51.486-.683-.207-1.13-.76-.99-1.238.14-.477.823-.7 1.512-.485.683.206 1.13.756.988 1.237zm0 0M44.016 103.685c.017.498-.563.91-1.28.92-.723.017-1.308-.387-1.315-.877 0-.503.568-.91 1.29-.924.717-.013 1.306.387 1.306.88zm0 0M48.614 102.903c.086.485-.413.984-1.126 1.117-.7.13-1.35-.172-1.44-.653-.086-.498.422-.997 1.122-1.126.714-.123 1.354.17 1.444.663zm0 0"
-            ></path>
-          </g>
-        </svg>
-      </div>
-      <div class="additional_skills">
-        <ul>
-          <li>
-            > Ability to learn new skills and understand its fundamentals/ core
-            concepts
-          </li>
-          <li>
-            > Ability to work and thrive in a team environment to produce
-            quality work
-          </li>
-          <li>> Ability to break down a problem and generate a solution</li>
-          <li>> Self Motivated, always striving to be better than yesterday</li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Projects Section -->
-    <div id="projects"></div>
-    <div class="projects__container">
-      <h2>Projects</h2>
-      <div class="project-box__container">
-        <div id="project-1" class="project-box">
-          <div id="project1-link" class="site-link">
-            <a href="http://moviedexus.netlify.app" target="_blank"
-              >Visit Site</a
-            >
+      <div id="skills" class="skills-container vh-100">
+        <div class="skills-wrapper">
+          <h2 id="skills-title" class="py-3 py-md-5 px-4 pe-md-5 text-lg-end">Skills</h2>
+          <div class="container-fluid me-0 pe-md-5 skill-icons d-flex flex-wrap justify-content-center justify-content-lg-around gap-5 align-items-center">
+            <i class="devcon devicon-html5-plain-wordmark"></i>
+            <i class="devcon devicon-css3-plain-wordmark"></i>
+            <i class="devcon devicon-javascript-plain"></i>
+            <i class="devcon devicon-react-original-wordmark"></i>
+            <i class="devcon devicon-bootstrap-plain-wordmark"></i>
+            <i class="devcon devicon-jquery-plain-wordmark"></i>
           </div>
-          <img src="./assets/images/moviedex-min.png" alt="moviedex" />
-        </div>
-        <div id="project-2" class="project-box">
-          <div id="project2-link" class="site-link">
-            <a href="http://moviedexus.netlify.app" target="_blank"
-              >Visit Site</a
-            >
-          </div>
-          <img src="./assets/images/portfolio-min.png" alt="portfolio" />
-        </div>
-        <div id="project-3" class="project-box">
-          <div id="project3-link" class="site-link">
-            <a href="http://efutureconference.netlify.app" target="_blank"
-              >Visit Site</a
-            >
-          </div>
-          <img src="./assets/images/efuture-min.png" alt="moviedex" />
         </div>
       </div>
     </div>
-
-    <!-- Contact Section -->
-    <div id="contact-me"></div>
-    <div class="contact__container">
-      <div class="other-contacts">
-        <div class="other-contact__container" id="email">
-          <span class="material-icons"> email </span>
-          <span
-            ><a href="mailto: urciaryle@gmail.com "
-              >urciaryle@gmail.com</a
-            ></span
-          >
+    <!-- Projects -->
+    <div id="projects" class="projects-container">
+      <h2 class="py-3 py-md-5 px-4 ps-md-5">Projects</h2>
+      <div class="project-container d-flex flex-column align-items-center">
+        <div id="project1" class="project">
+          <a href="https://tenacityconstruction.netlify.app/" target="__blank"><img src="/assets/images/tenacity_site-min.png" alt="tenacity_construction"></a>
+          <caption>Tenacity Construction (HTML, CSS, Bootstrap)</caption>
         </div>
-        <div class="other-contact__container" id="phone">
-          <span class="material-icons"> smartphone </span>
-          <span><a href="tel:+13472851873">+1 (347) 285 1873</a></span>
+        <div id="project2" class="project">
+          <a href="http://moviedexus.netlify.app" target="__blank"><img src="/assets/images/moviedex-min.png" alt="moviedex"></a>
+          <caption>MovieDex (React, React Router, Tailwind, Axios)</caption>
         </div>
-        <div class="other-contact__container" id="socials">
-          <span class="material-icons"> groups </span>
-          <span
-            ><a href="http://www.linkedin.com/in/urcia-ryle/" target="_blank"
-              >www.linkedin.com/in/urcia-ryle/</a
-            ></span
-          >
+        <div id="project3" class="project">
+          <a href="/"><img src="/assets/images/portfolio-min.png" alt="Portfolio"></a>
+          <caption>This Portfolio (HTML, CSS, JS, Jquery, Bootstrap)</caption>
         </div>
       </div>
     </div>
-    <footer>&copy Ryle Urcia 2021 v1.0</footer>
-
+    <!-- Footer -->
+    <div id="contact" class="d-flex flex-column align-items-center pb-5">
+      <h1 class="fw-bold">Contact Me</h1>
+      <a href="mailto: urciaryle@gmail.com">urciaryle@gmail.com</a>
+    </div>
     <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     <script src="./scripts/jquery-3.6.0.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"
-      integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
       integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"
       integrity="sha512-5/OHwmQzDSBS0Ous4/hlYoWLHd06/d2r7LdKZQVBXOA6PvOqWVXtdboiLTU7lQTGyVoKVTNkwi0ol4gHGlw5ww=="

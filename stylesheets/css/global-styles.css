@@ -1,29 +1,39 @@
+@font-face {
+  font-family: Montserrat;
+  src: url('/assets/font/Montserrat/');
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Poppins', sans-serif;
   scroll-behavior: smooth;
+  cursor: crosshair;
 }
 
 html {
-  max-width: 1920px;
+  /* max-width: 1920px; */
+  position: relative;
   margin: 0 auto;
   overflow-x: hidden;
 }
 
 a {
-  color: white;
+  color: black;
   text-decoration: none;
 }
 
+body {
+  background-color: white;
+}
+
 body::-webkit-scrollbar {
-  width: 0.5em;
+  width: 0.3em;
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #77acf1;
-  border-radius: 20px;
+  background-color: #8b8b8b;
 }
 
 .material-icons {

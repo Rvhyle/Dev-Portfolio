@@ -1,286 +1,152 @@
 @import './variables', './mixins';
 
-// Nab Bar
-.navbar__container {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: -50%;
-  transform: translateX(50%);
-  z-index: 100;
+// Nav
+nav {
+  button:focus {
+    box-shadow: 0 0 0 0.05rem !important;
+    border: none;
+  }
 
-  .nav {
-    @include flex-row;
-    width: 75%;
-    margin: 0 auto;
-    padding: 20px 0px;
+  .nav-link {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 2.6vh;
+  }
 
-    .navbar__logo {
-      display: inline-block;
-      color: $color-main-blue;
-      font-size: clamp(20px, 1.875em, 3em);
-      font-weight: 700;
+  .nav-link:hover {
+    color: black;
+  }
+}
+// Header
+header {
+  position: relative;
+  margin: 0 auto;
+
+  .header-content {
+    width: 100%;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+
+    h1,
+    h2 {
+      font-weight: bold;
+      font-size: 5.5vw;
     }
 
-    span {
-      cursor: pointer;
+    .cta {
+      i {
+        font-size: 4vh;
+      }
+    }
+
+    h2 {
+      -webkit-text-stroke-width: 1.7px;
+      -webkit-text-stroke-color: black;
+      -webkit-text-fill-color: transparent;
     }
   }
 }
 
-// Nav Links
-.navbar__content {
-  display: none; //Will change in Script
-  position: fixed;
-  z-index: 10000;
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  left: -50%;
-  transform: translateX(50%);
-  background-color: rgba(0, 0, 0, 0.966);
-  #close {
-    color: white;
-    position: relative;
-    right: -85vw;
-    top: 50px;
-    cursor: pointer;
+// About
+.about {
+  position: relative;
+  h2 {
+    font-size: 8vw;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.6rem;
+    -webkit-text-stroke-width: 1.7px;
+    -webkit-text-stroke-color: white;
+    -webkit-text-fill-color: transparent;
   }
 
-  .navbar__links {
+  .about-me {
+    width: 90%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    .navbar__link {
-      list-style: none;
-      line-height: 3.5rem;
-      font-size: 25px;
+    max-width: 100%;
+
+    p {
+      width: 80%;
+      max-width: 100%;
+      font-size: 2vh;
       color: white;
     }
   }
 }
 
-// Hero Container
-.hero__container {
-  margin: 200px auto;
-  .hero__main {
-    width: 75%;
-    margin: auto;
-    .hero__info {
-      text-align: center;
-      opacity: 100;
-      h1 {
-        color: $color-main-blue;
-        font-size: clamp(30px, 2vh, 1.5vh);
-        font-weight: 700;
-      }
-      h2 {
-        color: $color-washed-blue;
-        font-size: clamp(20px, 0.5vh, 1vh);
-        font-weight: 400;
-      }
+.skills-container {
+  position: relative;
+  .skills-wrapper {
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
-      #type-line {
-        font-size: 1em;
-        display: none;
-      }
+    h2 {
+      font-size: 8vw;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1.6rem;
     }
 
-    .socials__container {
-      width: 50%;
-      margin: 0 auto;
-      margin-top: 29px;
-      @include flex-row;
-      justify-content: center;
-      gap: 20px;
-
-      a {
-        text-decoration: none;
-      }
-
-      .linkedin__icon {
-        width: 40px;
-        height: 40px;
-      }
-
-      svg:hover {
-        fill: $color-washed-blue;
-        transition: all 0.3s ease-in-out;
-      }
-    }
-
-    // Big Svg
-    .svg-img__container {
-      display: none; //Will change in script
-      margin-top: 50px;
-      img {
-        width: 100%;
-        object-fit: cover;
-      }
-    }
-  }
-
-  .more-about-me__button {
-    span {
-      margin-top: 150px;
-      display: block;
-      text-align: center;
-      opacity: 40%;
-    }
-  }
-
-  .more-about-me__button:hover {
-    a {
-      color: $color-main-blue;
-      transition: all 0.5s ease-in-out;
-    }
-  }
-}
-
-// About Me
-.about-me__container {
-  width: 90%;
-  padding: 15px;
-  margin: 0 auto;
-  margin-top: 100px;
-  line-height: 1.5em;
-  color: white;
-  border-radius: 36px;
-  background-color: $color-main-blue;
-
-  h2 {
-    text-align: center;
-    font-weight: 400;
-    font-size: 20px;
-  }
-
-  p {
-    margin-top: 40px;
-    font-weight: 400;
-  }
-}
-
-// Skills
-.skills__container {
-  width: 75%;
-  margin: 200px auto;
-
-  h2 {
-    text-align: center;
-    margin-bottom: 100px;
-  }
-
-  .tech-icons__container {
-    @include flex-row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 50px;
-    svg {
-      width: 80px;
-    }
-  }
-
-  .additional_skills {
-    width: 100%;
-    background-color: $color-main-blue;
-    border-radius: 36px;
-    margin-top: 120px;
-    padding: 15px;
-    line-height: 1.5em;
-
-    ul {
-      list-style: none;
-      color: white;
-
-      li {
-        margin: 20px auto;
+    .skill-icons {
+      i {
+        font-size: 10vh;
       }
     }
   }
 }
 
 // Projects
-.projects__container {
-  width: 75%;
-  margin: 200px auto;
-  text-align: center;
+.projects-container {
+  width: 90%;
+  margin: 0px auto;
 
   h2 {
-    margin-bottom: 100px;
+    padding-bottom: 5rem;
+    font-size: 8vw;
+    font-weight: 600;
+    letter-spacing: 1.1rem;
   }
 
-  .project-box__container {
-    @include flex-col;
-    gap: 40px;
-    .project-box {
-      position: relative;
-      max-width: 400px;
-      border: 0.5px solid black;
+  .project-container {
+    width: 90%;
+    padding-bottom: 20rem;
+    margin: 0 auto;
+    gap: 10rem;
 
-      .site-link {
-        position: absolute;
-        display: none; // Will change in Script
-        opacity: 0;
-        background-color: rgba(25, 90, 243, 0.8);
-        width: 100%;
-        height: 100%;
-        a {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-        }
-      }
+    .project {
+      position: relative;
+      width: 90%;
+      height: auto;
+      border: 1px solid black;
 
       img {
         width: 100%;
+        height: 100%;
         object-fit: cover;
       }
     }
 
-    .project-box:hover {
-      .site-link {
-        opacity: 100;
-        display: block;
-      }
-    }
-  }
-}
-
-// Contact Me
-.contact__container {
-  width: 100%;
-  margin: 0 auto;
-  padding: 25px 15px;
-  color: white;
-  background-color: $color-main-blue;
-
-  h2 {
-    text-align: center;
-    font-weight: 400;
-    padding-bottom: 20px;
-  }
-
-  .other-contacts {
-    width: auto;
-    margin: auto;
-    text-align: center;
-    .other-contact__container {
-      @include flex-row;
-      gap: 20px;
-      padding-bottom: 15px;
-      justify-content: flex-start;
+    img:hover {
+      cursor: pointer;
     }
   }
 }
 
 // footer
 footer {
-  background-color: $color-main-blue;
-  color: white;
-  text-align: center;
-  font-weight: 300;
-  font-size: 0.8em;
-  padding: 10px;
+  width: 90%;
+  margin: 0 auto;
+
+  a {
+    font-size: 5rem;
+  }
 }
